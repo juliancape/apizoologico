@@ -1,0 +1,26 @@
+npm init --yes
+
+npm install express
+
+npm i -D nodemon
+
+se va a package.json y modifica y agrega en scripts el dev
+"dev": "nodemon index.js"
+
+Entras a MongoDBAtlas
+wTsTn1d7iNPLYyRI
+
+Para poder utilizar mongo
+npm i mongoose --save
+npm i dotenv --save
+
+
+'use strict';
+const http = require('http');
+
+const server = http.createServer(function(req, res){
+    res.writeHead(200, {'content-type': 'text/plain'});
+    res.end('Hola Mundo')
+});
+
+server.listen(5000);
